@@ -5,6 +5,23 @@ public class NameFormatter {
                                 String lastName,
                                 String suffix) throws IllegalAccessException {
 
+        if (prefix == null) {
+            prefix = "";
+        }
+        if (firstName == null) {
+            firstName = "";
+        }
+        if (middleName == null) {
+            middleName = "";
+        }
+        if (lastName == null) {
+            lastName = "";
+        }
+        if (suffix == null) {
+            suffix = "";
+        }
+
+
         if (lastName.isEmpty()) {
             throw new IllegalAccessException("You must provide a last name");
         }

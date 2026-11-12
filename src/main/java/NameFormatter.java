@@ -37,7 +37,17 @@ public class NameFormatter {
             result += prefix + " ";
         }
 
-        result += firstName;
+        result += firstName + " ";
+
+        if (!middleName.isEmpty()) {
+            result += middleName;
+        }
+
+        if (!suffix.isEmpty()) {
+            result += ", " + suffix;
+        }
+
+        return result;
 
     }
 
